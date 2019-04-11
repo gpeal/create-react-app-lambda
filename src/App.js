@@ -5,7 +5,7 @@ import './App.css';
 class SlackMessage extends Component {
   constructor(props) {
     super(props);
-    this.state = { loading: false, text: null, error: null, success: false };
+    this.state = { loading: false, text: undefined, error: null, success: false };
   }
   handleText = (e) => {
     this.setState({ text: e.target.value });
@@ -72,7 +72,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Slack Messenger</h1>
         </header>
-        <p><a onClick={this.handleIdentity}>User Status</a></p>
+        <button onClick={this.handleIdentity}>User Status</button>
         <SlackMessage />
       </div>
     );
