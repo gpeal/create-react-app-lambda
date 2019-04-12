@@ -29,7 +29,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "/build",
   "devDependencies": {
     "@babel/plugin-transform-object-assign": "^7.0.0",
     "babel-loader": "8.0.4",
